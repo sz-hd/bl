@@ -25,7 +25,6 @@ public class SysparamOfMysqlDaoImpl extends BaseExDaoOfMysqlImpl<SysparamModel> 
 	public List<Object> queryParamValue() throws Exception {
 		String sql = "select * from bl_sysparam where status = 1";
 		return this.query(sql, new Object[]{}, SysparamModel.class);
-		
 	}
 
 	@Override
