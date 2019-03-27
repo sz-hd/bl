@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: ￨ﾢﾁ￥ﾭﾦ￦ﾰﾑ
+Class-Path: ./ lib/commons-lang3-3.6.jar lib/fastjson-1.2.6.jar lib/gs
+ on-2.8.5.jar lib/jackson-core-2.9.6.jar lib/jackson-databind-2.9.6.ja
+ r lib/jackson-annotations-2.9.0.jar lib/service-model-0.0.1-SNAPSHOT.
+ jar
+Build-Jdk: 1.8.0_201
+Created-By: Maven Integration for Eclipse
+Main-Class: ***Main Application ***
+
