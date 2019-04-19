@@ -1,0 +1,36 @@
+server:
+  service[0]:
+    name:  case
+    url:  http://localhost:8080/springboot-case
+    serviceList:  {
+       "demo":  {
+          "addr":  "/test/getValue",
+          "remark":  ""
+       }
+    }
+    swagger:  http://localhost:8080/springboot-case/swagger-ui.html
+    version:  v1.0
+  service[1]:
+    name:  xtgl
+    url:  http://localhost:8082/springboot-xtgl
+    serviceList:  {
+       "demo":  {
+          "addr":  "/test/getValue",
+          "remark":  ""
+       }
+    }
+    swagger:  http://localhost:8082/springboot-xtgl/swagger-ui.html
+    version:  v1.0
+  service[2]:
+    name:  zdry
+    url:  http://localhost:8083/springboot-zdry
+    serviceList:  {
+       "demo":  {
+          "addr":  "/test/getValue",
+          "remark":  ""
+       }
+    }
+    swagger:  http://localhost:8083/springboot-zdry/swagger-ui.html
+    version:  v1.0
+  
+    

@@ -1,24 +1,31 @@
 package com.hdx.model;
 
-import com.hdx.model.BaseObject;
-import com.hdx.model.Column;
-import com.hdx.model.Table;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 @Table(name="BL_SYSPARAM")
+@ApiModel
 public class SysparamModel extends BaseObject {
 	private static final long serialVersionUID = 3785465190409274449L;
+	@ApiModelProperty(value="Id",name="Id")
 	@Column(name="ID",isId="true")
 	private Integer id;
+	@ApiModelProperty(value="参数key",name="paramKey")
 	@Column(name="PARAMKEY")
 	private String paramKey;
+	@ApiModelProperty(value="参数名称",name="paramName")
 	@Column(name="PARAMNAME")
 	private String paramName;
+	@ApiModelProperty(value="参数值",name="paramValue")
 	@Column(name="PARAMVALUE")
 	private String paramValue;
+	@ApiModelProperty(value="注释",name="remark")
 	@Column(name="REMARK")
 	private String remark;
+	@ApiModelProperty(value="参数状态",name="status")
 	@Column(name="STATUS")
 	private Integer status;
+	@ApiModelProperty(value="时间",name="updatedate")
 	@Column(name="UPDATEDATE")
 	private Integer updatedate;
 	

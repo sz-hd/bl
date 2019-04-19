@@ -14,6 +14,13 @@ import com.hdx.common.utils.JsonResult;
 public interface SysparamOfMysqlService extends BaseService{
 	@Transactional(propagation=Propagation.SUPPORTS, timeout=5)
 	public JsonResult testServer(Map<String,Object> parameter) throws Exception;
+	
 	@Transactional(propagation=Propagation.SUPPORTS, timeout=5)
-	public JsonResult getTimeStamp(Map<String,Object> parameter) throws Exception;
+	public JsonResult testCaseServer(Map<String,Object> parameter) throws Exception;
+	
+	@Transactional(propagation=Propagation.SUPPORTS, timeout=5)
+	public JsonResult testXtglServer(Map<String,Object> parameter) throws Exception;
+	
+	@Transactional(propagation=Propagation.SUPPORTS, timeout=5)
+	public JsonResult testZdryServer(Map<String,Object> parameter) throws Exception;
 }

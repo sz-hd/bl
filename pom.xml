@@ -1,5 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.hdx</groupId>
@@ -7,6 +7,11 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
+  <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.4.RELEASE</version>
+  </parent>
   <distributionManagement>
     <site>
       <id>website</id>
@@ -20,6 +25,10 @@
   <modules>
   	<module>bl-service-model</module>
   	<module>bl-service-biz</module>
-  	<module>bl-service-web</module>
+    <module>bl-web</module>
+    <module>springboot-webservice-zdry</module>
+    <module>springboot-webservice-case</module>
+    <module>springboot-webservice-xtgl</module>
+    <module>springboot-webservice-zhpcs</module>
   </modules>
 </project>
